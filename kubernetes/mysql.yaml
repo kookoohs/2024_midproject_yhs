@@ -39,11 +39,10 @@ metadata:
   name: mysql-service
   namespace: myapp
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: mysql
   ports:
     - protocol: TCP
       port: 3306
       targetPort: 3306
-      nodePort: 30006
