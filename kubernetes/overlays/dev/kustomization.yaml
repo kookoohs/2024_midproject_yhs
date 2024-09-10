@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../../base
+patchesStrategicMerge:
+- backend-patch.yaml
+- frontend-patch.yaml
+images:
+- name: esjwoo/mini-back
+  newName: 727646470302.dkr.ecr.ap-southeast-1.amazonaws.com/mid2-backend
+  newTag: abcdefg
+- name: esjwoo/mini-front
+  newName: 727646470302.dkr.ecr.ap-southeast-1.amazonaws.com/mid2-frontend
+  newTag: hijklmn
