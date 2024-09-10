@@ -53,5 +53,6 @@ spec:
     app: frontend
   ports:
     - protocol: TCP
-      port: 9443
+      # port: 9443
+      port: 443
       targetPort: 443

@@ -22,15 +22,15 @@ spec:
         - name: NODE_ENV
           value: "production"
         - name: MYSQL_HOST
-          value: "mysql-service"
+          value: "mybank-db.cxewkiaq63tk.ap-southeast-1.rds.amazonaws.com"
         - name: MYSQL_PORT
           value: "3306"
         - name: MYSQL_DATABASE
           value: "mybank"
         - name: MYSQL_USER
-          value: "student"
+          value: "admin"
         - name: MYSQL_PASSWORD
-          value: "abc123"
+          value: "alemvmfhwprxm2"
         - name: PORT
           value: "8000"
 ---
